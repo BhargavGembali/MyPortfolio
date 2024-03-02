@@ -524,11 +524,109 @@ section{
 }
 
 .Contact-title{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 40px;
+    color: #818aff;
+    display: inline-block; /* To make the underline fit the text content */
+    position: relative;
     margin: 20px 0px;
+}
+
+.Projects-title{
     text-align: left;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    text-align: center;
-    font-size: 40px;
+    font-size: 50px;
+    color: #818aff;
+    display: inline-block; /* To make the underline fit the text content */
+    position: relative;  
 }
+
+.Projects-title::after { 
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;          /* Vertical placement of the line */
+    width: 0;           /* Initially hidden */
+    height: 2px;        /* Set thickness of the line */ 
+    background-color: #818aff;  /* Set color of the line */
+    color: #818aff;
+    transition: width 0.6s ease-in-out;  /* Smooth transition */
+}
+
+.Projects-title:hover::after {
+    width: 100%; /* Expand the underline on hover */
+
+    /* To make the underline merge from both sides: */
+    transform-origin: 50% 0;  /* Transition starts from the center horizontally */
+}
+.Contact-email{
+    font-optical-sizing: auto;
+    width: 100%;
+    border-radius: 25px;
+    margin: 20px 20px;
+    min-height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Contact-email:hover{
+    border: 3px solid #818aff ;
+}
+
+.Contact-phonenumber{
+    font-optical-sizing: auto;
+    width: 100%;
+    border-radius: 25px;
+    margin: 20px 20px;
+    min-height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Contact-phonenumber:hover{
+    border: 3px solid #818aff ;
+}
+
+
+.Contact-submit{
+    width: 100px;
+    border-radius: 25px;
+    margin: 20px 42%;
+    text-align: center;
+    min-height: 30px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.Contact-submit:hover{
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+.Contact-links{
+    display: flex;
+}
+
+.Contacts-links a i.fa-brands {
+    padding: 0px 20px;
+}
+
+.Contacts-links a[href="https://github.com/BhargavGembali"] {
+    margin-left: 100px;
+}
+
+.Contacts-links a[href="https://www.linkedin.com/in/bhargav-gembali-66887824a/"] {
+    margin-left: -20px;
+}
+
+.Contacts-links a[href="https://twitter.com/Bhargavtweetss"] {
+    margin-left: -20px;
+}
+
+
 
