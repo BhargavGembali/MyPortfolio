@@ -270,6 +270,7 @@ section{
     background-color: #41414177;
     border-radius: 300px ;
     align-self: center;
+    box-shadow: 12px 12px #000;
 }
 .About-div-3{
     text-align: center;
@@ -281,7 +282,7 @@ section{
     background-color: #41414177;
     border-radius:300px;
     align-self:center;
-
+    box-shadow: 12px 12px #000;
 }
 
 
@@ -300,6 +301,7 @@ section{
     background-color: #41414177;
     border-radius: 100px ;
     align-self: center;
+    box-shadow: 15px 15px #000;
 }
 
 .Skills-title{
@@ -308,27 +310,25 @@ section{
     font-optical-sizing: auto;
     font-size: 50px;
     color: #818aff;
-    display: inline-block; /* To make the underline fit the text content */
-    position: relative;    /* To position the underline using pseudo-element */
+    display: inline-block; 
+    position: relative;   
 }
 
 .Skills-title::after { 
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0;          /* Vertical placement of the line */
-    width: 0;           /* Initially hidden */
-    height: 2px;        /* Set thickness of the line */ 
-    background-color: #818aff;  /* Set color of the line */
+    bottom: 0;
+    width: 0;        
+    height: 2px;
+    background-color: #818aff; 
     color: #818aff;
-    transition: width 0.6s ease-in-out;  /* Smooth transition */
+    transition: width 0.6s ease-in-out;  
 }
 
 .Skills-title:hover::after {
-    width: 100%; /* Expand the underline on hover */
-
-    /* To make the underline merge from both sides: */
-    transform-origin: 50% 0;  /* Transition starts from the center horizontally */
+    width: 100%; 
+    transform-origin: 50% 0;  
 }
 
 .seperation-div{
@@ -395,19 +395,6 @@ section{
     padding: 15px;
 }
 
-.poster{
-    width: 80%;
-    border-radius: 15px;
-    transition: 0.2s;
-}
-
-.poster:hover{
-    width: 83%;
-}
-
-.poster:hover::after {
-    width: 80%;
-}
 
 .poster-2{
     width: 76%;
@@ -417,6 +404,7 @@ section{
 
 .poster-2:hover{
     width: 78%;
+    box-shadow: 12px 15px #000;
 }
 
 .poster-2:hover::after {
@@ -431,6 +419,7 @@ section{
 
 .poster-3:hover{
     width: 103%;
+    box-shadow: 12px 15px #000;
 }
 
 .poster-3:hover::after {
@@ -475,6 +464,7 @@ section{
 
 .poster-1:hover{
     width: 80%;
+    box-shadow: 12px 15px #000;
 }
 
 .poster-1:hover::after {
@@ -497,8 +487,24 @@ section{
 
 .poster-4:hover{
     width: 45%;
+    box-shadow: 12px 15px #000;
 }
 
 .poster-4:hover::after {
     width: 78%;
+}
+
+.Contact-base{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 10px;
+    background-color: #41414177;
+    width: 80%;
+    min-height: 520px;
+    border-radius: 25px;
+}
+
+.Bhargav-poster{
+    width: 35%;
+    border-radius: 25px;
 }
