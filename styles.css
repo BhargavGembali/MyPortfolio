@@ -29,6 +29,8 @@ header nav{
 }
 
 header ul{
+    margin-left: 20%;
+    padding-right: 20%;
     display: flex;
     list-style: none;
     align-items: center;
@@ -505,6 +507,28 @@ section{
 }
 
 .Bhargav-poster{
-    width: 35%;
+    width: 65%;
     border-radius: 25px;
 }
+
+.Contact-right{
+    width: 100%;
+}
+
+.Contact-info{
+    width: 90%;
+    min-height: 300px;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.Contact-title{
+    margin: 20px 0px;
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 40px;
+}
+
