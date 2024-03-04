@@ -12,10 +12,10 @@ My portfolio has the following architecture:
    7. Google fonts,
 
 Sections in my portfolio:
-A. Home,
-B. About me,
-C. Skills,
-D. Projects,
-E. Education,
-F. Experience,
-G. Contact
+1. Home,
+2. About me,
+3. Skills,
+4. Projects,
+5. Education,
+6. Experience,
+7. Contact
