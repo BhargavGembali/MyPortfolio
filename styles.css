@@ -3,13 +3,48 @@ body{
     overflow-x: hidden;
 }
 
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0c20;
+    z-index: 100;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: '';
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 3px solid #2418ff;
+    border-top-color: #818aff;
+    animation: identifier 0.75s ease infinite; /* Corrected animation reference */
+}
+
+@keyframes identifier {
+    from { transform: rotate(0turn); }
+    to { transform: rotate(1turn); }
+}
+
+
 .logo {
     width: 130px;
     height: 50px;
 }
 header{
     position: fixed;
-    z-index: 9999;
+    z-index: 99;
     width:100%;
     padding: 0.9rem 0;
     top: 0;

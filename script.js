@@ -31,3 +31,15 @@ function sendMail() {
         alert("Failed to send email!");
     });
 }
+
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    setTimeout(() => {
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+            loader.parentNode.removeChild(loader);
+        });
+    }, 1000); // 4 seconds delay (4000 milliseconds)
+});
