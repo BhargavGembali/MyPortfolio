@@ -149,12 +149,12 @@ header ul a:hover {
     padding-top: 120px;
     transition: 0.4s;
 }
-@media (max-width: 750px) {
+@media (max-width: 1150px) {
     header ul a{
         display: none; 
     }
 }
-@media (min-width: 750px){
+@media (min-width: 1150px){
     .hamburger{
         display: none;
     }
@@ -250,12 +250,42 @@ section{
     text-align: left;
 }
 .right-section{
+    align-items: center;
     width:50%;
 }
 .right-section img{
     width: 130%;
     margin: -10%;
 }
+
+.resumeButton{
+    align-self: center;
+    text-align: center;
+    margin-left: 35%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    background-color:  #050412;
+    border: 2px solid #818aff;
+    transition: 0.4s;
+}
+.resumeButton a{
+    font-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    font-family: "Raleway", sans-serif;
+    color: #818aff;
+}
+
+.resumeButton a:hover{
+    cursor:pointer;
+    transition: 0.4s;
+}
+.resumeButton:hover{
+    background-color: #3a3a3a33;
+
+}
+
 
 .dev{
     width: 50%;
