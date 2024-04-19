@@ -1,3 +1,4 @@
+https://bhargavgembali.github.io/MyPortfolio/
 My portfolio has the following architecture:
 1. Images in /img file
 2. other .css, .html, .js files on the main / itself;
